@@ -1,0 +1,22 @@
+{
+  "name": "vacuum-widget",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "A tiny offline VACUUM game inside a Telegram message",
+  "license": "PostgreSQL",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test": "node --test test/*.test.mjs",
+    "preview": "node scripts/preview.mjs",
+    "bot": "node --env-file-if-exists=.env scripts/bot.mjs",
+    "test:browser": "node test/browser.mjs"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.65.0",
+    "terser": "5.51.2"
+  },
+  "engines": {
+    "node": ">=22.9"
+  }
+}
